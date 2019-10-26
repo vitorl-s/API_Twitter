@@ -10,6 +10,6 @@ app.use(express.json());
 app.use(require('./routes'));
 
 app.listen(3000,() => {
-    console.log('mudou o log tio');
+    console.log('Servidor atualizado!');
 })
 
