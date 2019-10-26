@@ -13,7 +13,7 @@ module.exports = {
 
     async like(req,res){
         const likeTweet = await tweet.findById(req.params.id);
-        likeTweet.set({likes: likeTweet.likes + 1 });
+        likeTweet.set({likes: likeTweet.likes++ });
         await likeTweet.save();
         return res.json(likeTweet);
     },
